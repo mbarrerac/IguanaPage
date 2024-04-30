@@ -1,0 +1,129 @@
+ body * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Raleway', sans-serif;
+  color: #ffffff;
+ 
+ }   
+.tituloImagen {
+    background-color: black;
+}
+ h1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 3em;
+
+ }
+.imagenCompleta {
+    width: 100%;
+    
+}
+ 
+ .ordenarTextoImagen {
+    justify-content: space-around; /* Alinea las columnas horizontalmente */
+    padding: 2em; 
+    display: flex; 
+    background-color: #000000 
+ }
+ .textoImagen{
+    font-size: 1em;
+    width: 40%; /* Establece el ancho de las columnas */
+ }
+
+ p {
+    text-align: center;
+    margin: 3em;
+    justify-content: space-between; 
+ }
+ .imagenDescripcion {
+    position: relative; 
+    width: 70%; 
+ }
+ .fondoIconos {
+    background-color: #141410;
+
+ }
+ h2 {
+    padding-top: 2rem;
+    text-align: center;
+    font-weight: 300;
+    font-size: 3em
+    
+ }
+ .ordenarIconos {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 2rem;
+
+ }
+ .ordenarIconos div span {
+    font-size: 40px; /* Tamaño del ícono */
+   
+ }
+
+ .ordenarImagenes {
+    display: flex; /* para alinear las columnas */
+    justify-content: space-around; /* Distribuye las columnas de manera uniforme */
+    background-color: #000000;
+    padding: 20px 300px;
+}
+
+.tresImagenes {
+    flex: 1; /* Cada columna ocupa un tercio del espacio disponible */
+    max-width: 30%; /*máximo de las imágenes */
+    padding: 10px; 
+    display: flex; 
+ 
+}
+
+.tresImagenes img {
+    max-width: 100%; 
+    object-fit: cover; /* Escala las imágenes para cubrir todo el contenedor manteniendo la relación de aspecto */
+    border: 5px solid #000000; 
+}
+
+h3 {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1em;
+    background-color: #141410;
+    
+ }
+
+
+@media screen and (max-width: 768px) {
+   .ordenarTextoImagen {
+     flex-direction: column; 
+   }
+   .textoImagen,
+   .imagenDescripcion {
+     width: 100%; 
+   }
+   .ordenarIconos {
+     flex-direction: column;
+   }
+   .ordenarIconos div {
+     margin-bottom: 1em;
+   }
+   .ordenarImagenes {
+     flex-direction: column; 
+     padding: 20px; 
+   }
+   .tresImagenes {
+     max-width: 100%; 
+     padding: 10px 0;
+   }
+   h1{
+      font-size: 1em;
+   }
+   h2{
+      font-size: 1em;
+   }
+ }
+ 
+
+ 
